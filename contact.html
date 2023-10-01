@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li><img src="logooo.png" alt="logo" width="50px" alt="logo" /></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+      <h1 style="text-align: center; color: #aa8636">GET IN TOUCH</h1>
+      <div>
+        <label for="input-name">Name</label>
+        <input type="text" id="input-name" name="name" />
+      </div>
+
+      <div>
+        <label for="input-email">Email</label>
+        <input type="email" id="input-email" name="email" />
+      </div>
+
+      <div>
+        <label for="input-number">Phone Number</label>
+        <input type="text" id="input-number" name="number" />
+      </div>
+
+      <div>
+        <label for="input-subject">Subject</label>
+        <select id="input-subject" name="subject">
+          <option value="" hidden>Select</option>
+          <option value="hai">Hai</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="input-message">Your Message</label>
+        <textarea
+          name="message"
+          rows="3"
+          cols="10"
+          class=""
+          id="input-message"
+        ></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li><img src="logooo.png" alt="logo" width="50px" alt="logo" /></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container mg-top-80">
+      <div class="form-content">
+        <form action="" onsubmit="addProject(event)">
+          <h1>ADD MY PROJECT</h1>
+          <!-- project Name -->
+          <div class="input-form">
+            <label for="input-project-name">Project Name</label>
+            <input type="text" maxlength="43" id="input-project-name" />
+          </div>
+          <!-- stard end project -->
+          <div class="flex">
+            <div class="input-form">
+              <label for="input-start-date">Start Date</label>
+              <input type="date" id="input-start-date" />
+            </div>
+            <div class="input-form ml-2">
+              <label for="input-end-date">End Date</label>
+              <input type="date" id="input-end-date" />
+            </div>
+          </div>
+          <!-- description -->
+          <div class="input-form">
+            <label for="input-description">Description</label>
+            <textarea id="input-description" rows="4" cols="50"></textarea>
+          </div>
+          <!-- technologies -->
+          <h3 for="input-project-description">Technologies</h3>
+          <div class="flex w-full m-0">
+            <div class="left-checkbox">
+              <div class="flex">
+                <input
+                  style="box-shadow: none"
+                  type="checkbox"
+                  value="Node Js"
+                  id="node-js-checkbox"
+                />
+                <label for="">Node Js</label>
+              </div>
+              <div class="flex">
+                <input
+                  style="box-shadow: none"
+                  type="checkbox"
+                  value="Node Js"
+                  id="next-js-checkbox"
+                /><label for="">Next Js</label>
+              </div>
+            </div>
+            <div class="right-checkbox ml-2">
+              <div class="flex">
+                <input
+                  style="box-shadow: none"
+                  type="checkbox"
+                  value="Node Js"
+                  id="node-js-checkbox"
+                />
+                <label for="">React Js</label>
+              </div>
+              <div class="flex">
+                <input
+                  style="box-shadow: none"
+                  type="checkbox"
+                  value="Node Js"
+                  id="next-js-checkbox"
+                /><label for="">Typescript</label>
+              </div>
+            </div>
+          </div>
+          <!-- Upload Image -->
+          <div class="input-form">
+            <label for="upload-image">Upload Image</label>
+            <div class="input-blog-image-group">
+              <label for="input-blog-image" class="input-blog-image">
+                <div class="file">
+                  <p>choose</p>
+                </div>
+                <img src="./file.png" />
+              </label>
+              <input type="file" id="input-blog-image" hidden="" />
+            </div>
+          </div>
+          <div class="submit-data">
+            <button type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>
